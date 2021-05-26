@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 67</title>
+</head>
+
+<body>
+    <div>
+        <pre>
+                            <h1>       Formulario </h1>
+        </pre>
+        <!--Formularios-->
+        <!-- Action es la ruta donde se envía la información -->
+        <!-- metho es la forma para pasar los parámetros (Get toma los parámetros por url y Post de manera oculta)-->
+        <!--br me permite saltar espacios y hr colocar una línea para separar campos. -->
+        <!-- Al poner un br entre líneas de código me permite colocar el texto sobre el bloque de llenado.-->
+        <form action="/">
+            <br>
+            <pre>
+            <label for="">       Nombre: </label>&nbsp;&nbsp;
+            <input type="text" id="nombre" id="nombre">
+            <br>
+            <label for="">       Apellido: </label>&nbsp;
+            <input type="text" id="apellido" name="apellido">
+            <br>
+            <!-- Se debe agregar email en vez de text para que ofrezca los correos que se tengan por defecto. -->
+            <label for="email">        Email: </label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="">        Password: </label>
+            <input type="password" id="pass" name="pass">
+            <br>
+        </pre>
+            <hr>
+            <br>
+            <!--input fecha-->
+            <pre>
+            <label for="fecha1"> Fecha 1: </label>
+            <br>
+            <input type="date" id="fecha1" name="fecha1">
+            <br>
+            <br>
+            <label for="fecha2"> Fecha 2 Datetime Local: </label>
+            <br>
+            <input type="datetime-local" id="fecha2" name="fecha2">
+            <br>
+            <br>
+            <label for="fecha3"> Fecha 3 Datetime: </label>
+            <br>
+            <input type="datetime" id="fecha3" name="fecha3">
+        </pre>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <!-- Input de selección u opción.-->
+            <!--Radio, name debe ser igual en todas las opciones -->
+            <pre>
+            <label for="masc"> Masculino: </label>
+            <input type="radio" id="masc" name="masc">
+            <label for="fem"> Femenino: </label>
+            <input type="radio" id="fem" name="masc">
+            <label for="otro"> Otro: </label>
+            <input type="radio" id="otro" name="masc">
+        </pre>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <!-- Ejemplo dos -->
+            <label for="masc"> Masculino: </label>
+            <input type="radio" id="masc" name="genero" value="m">
+            <label for="fem"> Femenino: </label>
+            <input type="radio" id="fem" name="genero" value="f">
+            <label for="otro"> Otro: </label>
+            <input type="radio" id="otro" name="genero" value="o">
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <!-- checkbox -->
+            <label for="verano"> Verano:</label>
+            <input type="checkbox" id="verano" name="estaciones" value="v">
+
+            <label for="invierno"> Invierno:</label>
+            <input type="checkbox" id="invierno" name="estaciones" value="i">
+
+            <label for="otoño"> Otoño:</label>
+            <input type="checkbox" id="otoño" name="estaciones" value="o">
+
+            <label for="primavera"> Primavera:</label>
+            <input type="checkbox" id="primavera" name="estaciones" value="p">
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <!-- Selección -->
+            <select name="lenguajes" id="lenguajes">
+                <option value="0"> Selecciona un lenguaje </option>
+                <option value="1"> Html </option>
+                <option value="2"> CSS </option>
+                <option value="3"> JavaScript </option>
+                <option value="4"> Ninguno </option>
+            </select>
+            <br>
+            <br>
+            <!-- Text area, para agregar información-->
+            <label for="detalle"> Ingrese información detallada: </label>
+            <br>
+            <textarea name="detalle" id="detalle" cols="20" rows="3"></textarea>
+            <!--Botones, no sirve para enviar el formulario por si solo -->
+            <br>
+            <input type="button" value="Enviar">
+            <input type="submit" value="Eviar">
+        </form>
+    </div>
+</body>
